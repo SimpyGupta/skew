@@ -1,0 +1,97 @@
+body , html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+
+.bg-primary{
+    background-color: #dc4a4a;
+}
+
+.bg-secondary{
+    background-color: #ea675c;
+}
+
+.bg-dark{
+    background-color: #f7d56f;
+}
+
+.bg-danger{
+    background-color: #41a7bd;
+}
+
+.skew-panel {
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.skew-panel .skew-item{
+    width: 100%;
+    float: left;
+    height: 33.33%;
+    position: relative;
+}
+.skew-panel .skew-item .skew-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform-origin: 0 0;
+    cursor: pointer;
+}
+.skew-panel .skew-item .skew-content-holder{
+    float: left;
+    width: 25%;
+    position: absolute;
+    text-align: center;
+    left: 0px;
+    z-index: 1;
+    top: 50%;
+}
+.skew-panel .skew-item:last-child .skew-content-holder{
+    top: 50%;
+    right: 0px;
+    left: auto;
+}
+
+.skew-panel .skew-item .skew-content-holder img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: solid 3px #ffffff;
+    font-size: 27px;
+    display: inline-block;
+    line-height: 60px;
+    margin-bottom: 2px;
+}
+.skew-panel .skew-item .skew-content-holder .page-name {
+    color: #ffffff;
+    float: left;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0 5px;
+}
+
+.skew-panel .skew-menu {
+    position: absolute;
+    top: 15px;
+    z-index: 99;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    font-size: 19px;
+    text-align: center;
+    line-height: 39px;
+    cursor: pointer;
+}
