@@ -58,9 +58,12 @@ var skewMenu = {
 };
 
 //initlized function
+
 skewMenu.init();
 
 // this function apply skew on device width change dynamically
+
+
 window.onresize = function() {
     skewMenu.init();
 }
